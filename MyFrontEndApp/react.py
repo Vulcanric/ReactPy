@@ -61,18 +61,23 @@ class ReactPy:
         """
         self.__host: str = host
         self.__port: int = port
-        self.__config: Dict[str, Union[str, int]] = {
+        self.config: Dict[str, Union[str, int]] = {
             "host": self.__host,
             "port": self.__port
         }
 
-    def config(self):
-        return self.__config
+    @property
+    def host(self):
+        return self.config['host']
+
+    @property
+    def port(self):
+        return self.config['port']
 
     def run(
             self,
-            host: str = config().get('host'),
-            port: int = config().get('port')
+            host: str = host,
+            port: int = port
         ) -> None:
         """ Run the ReactPy App
         """

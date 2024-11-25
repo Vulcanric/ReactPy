@@ -1,4 +1,4 @@
-from TabulatedInfo import TabulatedInfo
+from components.TabulatedInfo import TabulatedInfo
 
 def AboutCard():
     """Card displaying informations on React.py

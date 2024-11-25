@@ -1,8 +1,8 @@
-from ../react import Link
+from react import Link
 
 def WelcomeCard():
     """ Welcome The Stranger """
-    return f''"
+    return f'''
     <div>
         <h1>
             Hello Stranger
